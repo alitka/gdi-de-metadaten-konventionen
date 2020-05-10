@@ -9,7 +9,7 @@ Um ein reibungsloses Zusammenwirken der nationalen technischen Komponenten der G
 
 Zur leichteren Handhabung ist das Architekturkonzept der GDI-DE aus einzelnen Dokumenten in drei verschiedenen Kategorien (grundsätzliche Festlegungen, spezielle technische Festlegungen und Empfehlungen) aufgebaut:
 
-![img_aufbau](https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/images/img_aufbau.png)
+![img_aufbau](https://raw.githubusercontent.com/alitka/gdi-de-metadaten-konventionen/master/images/img_aufbau.png)
 
 Grundsätzliche Festlegungen werden durch Beschluss des LG GDI-DE in folgenden Dokumenten getroffen:
 
