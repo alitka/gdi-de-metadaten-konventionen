@@ -1,4 +1,6 @@
 theme: jekyll-theme-dinky
 title: GDI-DE Arbeitskreis Metadaten
 description: GDI-DE Architektur der Geodateninfrastruktur Deutschland - Konventionen zu Metadaten
-show_downloads: "false"
+show_downloads: "true"
+github:
+  zip_url: https://www.gdi-de.org/SharedDocs/Downloads/DE/GDI-DE/Dokumente/Konventionen_zu_Metadaten_V2.0.3.pdf
