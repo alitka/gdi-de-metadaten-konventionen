@@ -20,29 +20,20 @@
 
         <ul>
           {% if site.show_downloads %}
-            <li class="download"><a class="buttons" href="{{ site.github.zip_url }}">Download ZIP</a></li>
+            <li class="download"><a class="buttons" href="{{ https://www.gdi-de.org/SharedDocs/Downloads/DE/GDI-DE/Dokumente/Konventionen_zu_Metadaten_V2.0.3.pdf?__blob=publicationFile }}">Architektur GDI-DE -Konventionen Metadaten, Version 2.0.3</a></li>
           {% endif %}
-          <li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>
         </ul>
 
         {% if site.github.is_project_page %}
-          <p class="header">This project is maintained by <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+          <p class="header">This project is maintained by GDI-DE Ak Metadaten</a></p>
         {% endif %}
 
-        {% if site.github.is_user_page %}
-          <ul>
-            <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
-          </ul>
-        {% endif %}
       </header>
 
       <section>
         {{ content }}
       </section>
-
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+      
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     {% if site.google_analytics %}
