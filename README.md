@@ -46,7 +46,9 @@ Bzgl. der Vorgaben seitens INSPIRE wird an dieser Stelle explizit darauf hingewi
 
 ## Die Topologie der Metadatenkataloge
 
-In der GDI-DE existieren eine Vielzahl verteilter, eigenständiger Metadatenkataloge, deren Inhalte im zentralen Geodatenkatalog.de zusammengeführt werden. Eine ähnliche Aggregation geschieht auch in anderen Knoten. Beispielsweise laufen in den Katalogen der Bundesländer die Metadaten aus verschiedenen Bereichen und Ebenen der Verwaltung zusammen. Abbildung 2 verdeutlicht diesen Zusammenhang.
+In der GDI-DE existieren eine Vielzahl verteilter, eigenständiger Metadatenkataloge, deren Inhalte im zentralen Geodatenkatalog.de zusammengeführt werden. Eine ähnliche Aggregation geschieht auch in anderen Knoten. Beispielsweise laufen in den Katalogen der Bundesländer die Metadaten aus verschiedenen Bereichen und Ebenen der Verwaltung zusammen. Die nachfolgende Abbildung verdeutlicht diesen Zusammenhang.
+
+![img_topologie](https://raw.githubusercontent.com/alitka/gdi-de-metadaten-konventionen/master/images/img_topologie.PNG)
 
 Eine Beschreibung der zentralen Komponente „Geodatenkatalog.de“ der GDI-DE erfolgt in diesem Dokument nicht, sondern ist im Dokument „Architektur der GDI-DE – Technik“ zu finden. Dort werden auch die Voraussetzungen für die Einbindung einer dezentralen Katalogschnittstelle in die GDI-DE beschrieben.
 
