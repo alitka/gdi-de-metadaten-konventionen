@@ -22,13 +22,7 @@
           {% if site.show_downloads %}
             <li class="download"><a class="buttons" href="{{ site.github.zip_url }}">Version 2.0.3</a></li>
             <li class="download"><a class="buttons" href="{{ site.pages }}">Kapitel</a></li>
-            <li>
-                    
-          {% assign pages_list = site.pages %}
-          {% assign group = 'navigation' %}
-          {% include JB/pages_list %}
-        </li>
-{% endif %}
+           {% endif %}
         </ul>
         {% if site.github.is_project_page %}
           <p class="header">This project is maintained by GDI-DE Ak Metadaten</a></p>
