@@ -22,6 +22,10 @@
           {% if site.show_downloads %}
             <li class="download"><a class="buttons" href="{{ site.github.zip_url }}">Version 2.0.3</a></li>
           {% endif %}
+          
+          {% assign pages_list = site.pages %}
+          {% assign group = 'navigation' %}
+          {% include JB/pages_list %}
         </ul>
 
         {% if site.github.is_project_page %}
