@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "Publications"
-    url: /publications/
+    url: https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/publications.md
 
   - title: "Talks"
     url: /talks/    
