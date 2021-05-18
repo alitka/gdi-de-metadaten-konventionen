@@ -4,19 +4,4 @@ main:
     url: https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/publications.md
 
   - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+    url: https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/talks.html
