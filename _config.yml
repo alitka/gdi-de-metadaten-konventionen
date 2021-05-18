@@ -8,5 +8,4 @@ github:
 
 # Reading Files
 include:
-  - .htaccess
-  - _publications
+  - _pages
