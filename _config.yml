@@ -25,7 +25,7 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: "https://github.com/alitka/gdi-de-metadaten-konventionen/tree/master/_pages"
+      path: ""
       type: pages
     values:
       layout: default
@@ -59,7 +59,7 @@ defaults:
       comment: true
   # _talks
   - scope:
-      path: "https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/talks.html"
+      path: ""
       type: talks
     values:
       layout: default
