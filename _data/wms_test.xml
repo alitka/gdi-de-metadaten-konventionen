@@ -168,6 +168,7 @@
 					<Keyword>Administrative Unit</Keyword>
 					<Keyword>Verwaltungseinheit</Keyword>
 				</KeywordList>
+				<CRS>EPSG:4326</CRS>
 				<AuthorityURL name="lgb">
 					<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geoportal.brandenburg.de/registry/lgb"/>
 				</AuthorityURL>
