@@ -169,6 +169,13 @@
 					<Keyword>Verwaltungseinheit</Keyword>
 				</KeywordList>
 				<CRS>EPSG:4326</CRS>
+				<EX_GeographicBoundingBox>
+				<westBoundLongitude>10.8978490830899</westBoundLongitude>
+				<eastBoundLongitude>14.9049379960258</eastBoundLongitude>
+				<southBoundLatitude>51.2999957016739</southBoundLatitude>
+				<northBoundLatitude>53.5999945122912</northBoundLatitude>
+			</EX_GeographicBoundingBox>
+			<BoundingBox CRS="EPSG:25833" minx="228152" miny="5690412" maxx="493382" maxy="5939023" resx="1" resy="1"/>
 				<AuthorityURL name="lgb">
 					<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geoportal.brandenburg.de/registry/lgb"/>
 				</AuthorityURL>
