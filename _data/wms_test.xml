@@ -140,8 +140,8 @@
 			</EX_GeographicBoundingBox>
 			<BoundingBox CRS="EPSG:25833" minx="228152" miny="5690412" maxx="493382" maxy="5939023" resx="1" resy="1"/>
 			<BoundingBox CRS="EPSG:25832" minx="625794.536741298" miny="5685280.5860994" maxx="910927.519457639" maxy="5955214.83895806" resx="1" resy="1"/>
-			<BoundingBox CRS="EPSG:4326" minx="51.2999957016739" miny="11.0999882741047" maxx="53.5999945122912" maxy="14.8999944420867" resx="1" resy="1"/>
-			<BoundingBox CRS="EPSG:4258" minx="51.2999957016739" miny="11.0999882741047" maxx="53.5999945122912" maxy="14.8999944420867" resx="1" resy="1"/>
+			<BoundingBox CRS="EPSG:4326" minx="51.2999957016739" miny="11.0999882741047" maxx="53.5999945122912" maxy="14.8999944420867" resx="1" resy="1"/> 
+<!--			<BoundingBox CRS="EPSG:4258" minx="51.2999957016739" miny="11.0999882741047" maxx="53.5999945122912" maxy="14.8999944420867" resx="1" resy="1"/> -->
 			<BoundingBox CRS="EPSG:3034" minx="2725337.83351404" miny="4074079.90884607" maxx="2982432.33771219" maxy="4313382.25302754" resx="1" resy="1"/>
 			<BoundingBox CRS="EPSG:3035" minx="3132694.44665344" miny="4397714.6851617" maxx="3399003.9057543" maxy="4645148.41163017" resx="1" resy="1"/>
 			<BoundingBox CRS="EPSG:3044" minx="5685280.5860994" miny="646395.940082372" maxx="5955214.83895806" maxy="890235.390177993" resx="1" resy="1"/>
