@@ -13,11 +13,11 @@
     <ows:ServiceType>CSW</ows:ServiceType>
     <ows:ServiceTypeVersion>2.0.2</ows:ServiceTypeVersion>
     <ows:Fees>Nutzungsbedingungen</ows:Fees>
-    <ows:AccessConstraints>siehe LizenzGeobasisinformationen werden auf Antrag übermittelt, soweit nicht eine Rechtsvorschrift eine Übermittlung oder Veröffentlichung von Amts wegen vorschreibt. Angaben zu den Grundstückseigentümern und Erbbauberechtigten dürfen übermittelt werden, wenn der Empfänger ein berechtigtes Interesse an der Kenntnis dieser Informationen darlegt. Der Darlegung eines berechtigten Interesses bedarf es nicht zur Übermittlung an öffentliche Stellen. Der Empfänger hat den Zweck der Verwendung der Geobasisinformationen der Vermessungsbehörde auf Verlangen anzuzeigen. Er darf die Geobasisinformationen insbesondere nur zu dem Zweck verwenden, zu dem sie ihm übermittelt worden sind.</ows:AccessConstraints>
+    <ows:AccessConstraints>Nutzungsbedingungen: siehe LizenzGeobasisinformationen werden auf Antrag übermittelt, soweit nicht eine Rechtsvorschrift eine Übermittlung oder Veröffentlichung von Amts wegen vorschreibt. Angaben zu den Grundstückseigentümern und Erbbauberechtigten dürfen übermittelt werden, wenn der Empfänger ein berechtigtes Interesse an der Kenntnis dieser Informationen darlegt. Der Darlegung eines berechtigten Interesses bedarf es nicht zur Übermittlung an öffentliche Stellen. Der Empfänger hat den Zweck der Verwendung der Geobasisinformationen der Vermessungsbehörde auf Verlangen anzuzeigen. Er darf die Geobasisinformationen insbesondere nur zu dem Zweck verwenden, zu dem sie ihm übermittelt worden sind.</ows:AccessConstraints>
   </ows:ServiceIdentification>
   <ows:ServiceProvider>
     <ows:ProviderName>Thüringer Landesamt für Bodenmanagement und Geoinformation</ows:ProviderName>
-    <ows:ProviderSite xlink:href="https://www.geoportal-th.de/de-de/GDI-Th/Kompetenzzentrum-GDI-Th"/>
+    <ows:ProviderSite xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.geoportal-th.de/de-de/GDI-Th/Kompetenzzentrum-GDI-Th"/>
     <ows:ServiceContact>
       <ows:IndividualName>Kompetenzzentrum Geodateninfrastruktur Thüringen (GDI-Th)</ows:IndividualName>
       <ows:PositionName>Ansprechpartner</ows:PositionName>
@@ -42,8 +42,8 @@
     <ows:Operation name="GetCapabilities">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="sections">
@@ -60,8 +60,8 @@
     <ows:Operation name="DescribeRecord">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="outputFormat">
@@ -90,16 +90,16 @@
     <ows:Operation name="GetDomain">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="GetRecords">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="resultType">
@@ -198,11 +198,11 @@
     <ows:Operation name="GetRecordById">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
-      <ows:Parameter>
+      <ows:Parameter xmlns:gfc="http://www.isotc211.org/2005/gfc" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" name="outputSchema">
         <ows:Value>http://www.opengis.net/cat/csw/2.0.2</ows:Value>
         <ows:Value>http://www.isotc211.org/2005/gfc</ows:Value>
         <ows:Value>http://www.w3.org/ns/dcat#</ows:Value>
@@ -235,16 +235,16 @@
     <ows:Operation name="Transaction">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
-          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw-publication"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="Harvest">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
-          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw-publication"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="ResourceType">
@@ -266,7 +266,7 @@
     <ows:ExtendedCapabilities>
       <inspire_ds:ExtendedCapabilities>
         <inspire_com:ResourceLocator>
-          <inspire_com:URL>http://62.159.72.87:8080/geonetwork/srv/eng/csw?SERVICE=CSW&&amp;VERSION=2.0.2&&amp;REQUEST=GetCapabilities</inspire_com:URL>
+          <inspire_com:URL>http://localhost:8080/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetCapabilities</inspire_com:URL>
           <inspire_com:MediaType>application/xml</inspire_com:MediaType>
         </inspire_com:ResourceLocator>
         <inspire_com:ResourceLocator>
