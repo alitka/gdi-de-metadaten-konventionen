@@ -266,7 +266,7 @@
     <ows:ExtendedCapabilities>
       <inspire_ds:ExtendedCapabilities>
         <inspire_com:ResourceLocator>
-          <inspire_com:URL>http://62.159.72.87:8080/geonetwork/srv/eng/csw?SERVICE=CSW&VERSION=2.0.2&REQUEST=GetCapabilities</inspire_com:URL>
+          <inspire_com:URL>http://62.159.72.87:8080/geonetwork/srv/eng/csw?SERVICE=CSW&&amp;VERSION=2.0.2&&amp;REQUEST=GetCapabilities</inspire_com:URL>
           <inspire_com:MediaType>application/xml</inspire_com:MediaType>
         </inspire_com:ResourceLocator>
         <inspire_com:ResourceLocator>
