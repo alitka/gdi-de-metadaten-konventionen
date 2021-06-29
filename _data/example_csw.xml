@@ -326,19 +326,37 @@
           <inspire_com:KeywordValue>Gewässernetz</inspire_com:KeywordValue>
         </inspire_com:Keyword>
         <inspire_com:SupportedLanguages>
-          <inspire_com:DefaultLanguage>
-            <inspire_com:Language>ger</inspire_com:Language>
-          </inspire_com:DefaultLanguage>
-          <inspire_com:SupportedLanguage>
-            <inspire_com:Language>ger</inspire_com:Language>
-          </inspire_com:SupportedLanguage>
-          <inspire_com:SupportedLanguage>
-            <inspire_com:Language>eng</inspire_com:Language>
-          </inspire_com:SupportedLanguage>
-        </inspire_com:SupportedLanguages>
-        <inspire_com:ResponseLanguage>
-          <inspire_com:Language>ger</inspire_com:Language>
-        </inspire_com:ResponseLanguage>
+<!--
+        List of supported languages
+        -->
+<inspire_common:DefaultLanguage>
+<inspire_common:Language>ger</inspire_common:Language>
+</inspire_common:DefaultLanguage>
+<inspire_common:SupportedLanguage>
+<inspire_common:Language>fre</inspire_common:Language>
+</inspire_common:SupportedLanguage>
+<inspire_common:SupportedLanguage>
+<inspire_common:Language>spa</inspire_common:Language>
+</inspire_common:SupportedLanguage>
+<inspire_common:SupportedLanguage>
+<inspire_common:Language>por</inspire_common:Language>
+</inspire_common:SupportedLanguage>
+<inspire_common:SupportedLanguage>
+<inspire_common:Language>dut</inspire_common:Language>
+</inspire_common:SupportedLanguage>
+<inspire_common:SupportedLanguage>
+<inspire_common:Language>fin</inspire_common:Language>
+</inspire_common:SupportedLanguage>
+<inspire_common:SupportedLanguage>
+<inspire_common:Language>ita</inspire_common:Language>
+</inspire_common:SupportedLanguage>
+<inspire_common:SupportedLanguage>
+<inspire_common:Language>eng</inspire_common:Language>
+</inspire_common:SupportedLanguage>
+</inspire_com:SupportedLanguages>
+<inspire_com:ResponseLanguage>
+<inspire_com:Language>ger</inspire_com:Language>
+</inspire_com:ResponseLanguage>
       </inspire_ds:ExtendedCapabilities>
     </ows:ExtendedCapabilities>
   </ows:OperationsMetadata>
