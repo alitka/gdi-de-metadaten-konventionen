@@ -48,8 +48,8 @@
     <ows:Operation name="GetCapabilities">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="sections">
@@ -66,8 +66,8 @@
     <ows:Operation name="DescribeRecord">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="outputFormat">
@@ -96,16 +96,16 @@
     <ows:Operation name="GetDomain">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="GetRecords">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="resultType">
@@ -204,8 +204,8 @@
     <ows:Operation name="GetRecordById">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter xmlns:gfc="http://www.isotc211.org/2005/gfc" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" name="outputSchema">
@@ -241,16 +241,16 @@
     <ows:Operation name="Transaction">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw-publication"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="Harvest">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw-publication"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="ResourceType">
@@ -271,7 +271,7 @@
     </ows:Constraint>
       <inspire_ds:ExtendedCapabilities>
         <inspire_com:ResourceLocator>
-          <inspire_com:URL>http://localhost:8080/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetCapabilities</inspire_com:URL>
+          <inspire_com:URL>http://62.159.72.87:8080/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetCapabilities</inspire_com:URL>
           <inspire_com:MediaType>application/xml</inspire_com:MediaType>
         </inspire_com:ResourceLocator>
         <inspire_com:ResourceLocator>
