@@ -324,78 +324,61 @@
       </inspire_ds:ExtendedCapabilities>
     </ows:ExtendedCapabilities>
 -->
-        <inspire_ds:ExtendedCapabilities>
-      <inspire_com:ResourceLocator>
-        <inspire_com:URL>https://gdk.gdi-de.org/gdi-de/srv/ger/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetCapabilities</inspire_com:URL>
-        <inspire_com:MediaType>application/xml</inspire_com:MediaType>
-      </inspire_com:ResourceLocator>
-      <inspire_com:ResourceLocator>
-        <inspire_com:URL>https://gdk.gdi-de.org/gdi-de</inspire_com:URL>
-        <inspire_com:MediaType>text/html</inspire_com:MediaType>
-      </inspire_com:ResourceLocator>
-      <inspire_com:ResourceType>service</inspire_com:ResourceType>
-      keine
-      <inspire_com:Conformity>
-        <inspire_com:Specification xsi:type="inspire_com:citationInspireInteroperabilityRegulation_ger">
-          <inspire_com:Title>VERORDNUNG (EG) Nr. 1089/2010 DER KOMMISSION vom 23. November 2010 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich der Interoperabilität von Geodatensätzen und -diensten</inspire_com:Title>
-          <inspire_com:DateOfPublication>2010-12-08</inspire_com:DateOfPublication>
-          <inspire_com:URI>OJ:L:2010:323:0011:0102:DE:PDF</inspire_com:URI>
-          <inspire_com:ResourceLocator>
-            <inspire_com:URL>http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:323:0011:0102:DE:PDF</inspire_com:URL>
-            <inspire_com:MediaType>application/pdf</inspire_com:MediaType>
-          </inspire_com:ResourceLocator>
-        </inspire_com:Specification>
-        <inspire_com:Degree>notEvaluated</inspire_com:Degree>
-      </inspire_com:Conformity>
-      <inspire_com:MetadataPointOfContact>
-        <inspire_com:OrganisationName>BKG</inspire_com:OrganisationName>
-        <inspire_com:EmailAddress>sara.biesel@bkg.bund.de</inspire_com:EmailAddress>
-      </inspire_com:MetadataPointOfContact>
-      <inspire_com:MetadataDate>2010-07-15</inspire_com:MetadataDate>
-      <inspire_com:SpatialDataServiceType>discovery</inspire_com:SpatialDataServiceType>
-      <inspire_com:MandatoryKeyword xsi:type="inspire_com:classificationOfSpatialDataService">
-        <inspire_com:KeywordValue>infoCatalogueService</inspire_com:KeywordValue>
-      </inspire_com:MandatoryKeyword>
-      <inspire_com:Keyword xsi:type="inspire_com:inspireTheme_ger">
-        <inspire_com:OriginatingControlledVocabulary>
-          <inspire_com:Title>GEMET - INSPIRE themes</inspire_com:Title>
-          <inspire_com:DateOfPublication>2008-06-01</inspire_com:DateOfPublication>
-        </inspire_com:OriginatingControlledVocabulary>
-        <inspire_com:KeywordValue>Orthofotografie</inspire_com:KeywordValue>
-      </inspire_com:Keyword>
-      <inspire_com:SupportedLanguages>
-        <!--
-        List of supported languages
-        -->
-        <inspire_common:DefaultLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
-          <inspire_common:Language>ger</inspire_common:Language>
-        </inspire_common:DefaultLanguage>
-        <inspire_common:SupportedLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
-          <inspire_common:Language>fre</inspire_common:Language>
-        </inspire_common:SupportedLanguage>
-        <inspire_common:SupportedLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
-          <inspire_common:Language>spa</inspire_common:Language>
-        </inspire_common:SupportedLanguage>
-        <inspire_common:SupportedLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
-          <inspire_common:Language>por</inspire_common:Language>
-        </inspire_common:SupportedLanguage>
-        <inspire_common:SupportedLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
-          <inspire_common:Language>dut</inspire_common:Language>
-        </inspire_common:SupportedLanguage>
-        <inspire_common:SupportedLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
-          <inspire_common:Language>fin</inspire_common:Language>
-        </inspire_common:SupportedLanguage>
-        <inspire_common:SupportedLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
-          <inspire_common:Language>ita</inspire_common:Language>
-        </inspire_common:SupportedLanguage>
-        <inspire_common:SupportedLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
-          <inspire_common:Language>eng</inspire_common:Language>
-        </inspire_common:SupportedLanguage>
-      </inspire_com:SupportedLanguages>
-      <inspire_com:ResponseLanguage>
-        <inspire_com:Language>ger</inspire_com:Language>
-      </inspire_com:ResponseLanguage>
-    </inspire_ds:ExtendedCapabilities>
+    <ows:ExtendedCapabilities>
+      <inspire_ds:ExtendedCapabilities>
+        <inspire_com:ResourceLocator>
+          <inspire_com:URL>http://62.159.72.87:8080/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetCapabilities</inspire_com:URL>
+          <inspire_com:MediaType>application/xml</inspire_com:MediaType>
+        </inspire_com:ResourceLocator>
+        <inspire_com:ResourceLocator>
+          <inspire_com:URL>62.159.72.87:8080/geonetwork/srv/eng/csw</inspire_com:URL>
+          <inspire_com:MediaType>text/html</inspire_com:MediaType>
+        </inspire_com:ResourceLocator>
+        <inspire_com:ResourceType>service</inspire_com:ResourceType>
+        <inspire_com:Conformity>
+          <inspire_com:Specification xsi:type="inspire_com:citationInspireInteroperabilityRegulation_ger">
+            <inspire_com:Title>VERORDNUNG (EG) Nr. 1089/2010 DER KOMMISSION vom 23. November 2010 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich der Interoperabilität von Geodatensätzen und -diensten</inspire_com:Title>
+            <inspire_com:DateOfPublication>2010-12-08</inspire_com:DateOfPublication>
+            <inspire_com:URI>OJ:L:2010:323:0011:0102:DE:PDF</inspire_com:URI>
+            <inspire_com:ResourceLocator>
+              <inspire_com:URL>http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:323:0011:0102:DE:PDF</inspire_com:URL>
+              <inspire_com:MediaType>application/pdf</inspire_com:MediaType>
+            </inspire_com:ResourceLocator>
+          </inspire_com:Specification>
+          <inspire_com:Degree>conformant</inspire_com:Degree>
+        </inspire_com:Conformity>
+        <inspire_com:MetadataPointOfContact>
+          <inspire_com:OrganisationName>Thüringer Landesamt für Bodenmanagement und Geoinformation</inspire_com:OrganisationName>
+          <inspire_com:EmailAddress>stefanie.hackel@tlbg.thueringen.de</inspire_com:EmailAddress>
+        </inspire_com:MetadataPointOfContact>
+        <inspire_com:MetadataDate>2021-06-29</inspire_com:MetadataDate>
+        <inspire_com:SpatialDataServiceType>discovery</inspire_com:SpatialDataServiceType>
+        <inspire_com:MandatoryKeyword xsi:type="inspire_com:classificationOfSpatialDataService">
+          <inspire_com:KeywordValue>infoCatalogueService</inspire_com:KeywordValue>
+        </inspire_com:MandatoryKeyword>
+        <inspire_com:Keyword xsi:type="inspire_com:inspireTheme_ger">
+          <inspire_com:OriginatingControlledVocabulary>
+            <inspire_com:Title>GEMET - INSPIRE themes</inspire_com:Title>
+            <inspire_com:DateOfPublication>2008-06-01</inspire_com:DateOfPublication>
+          </inspire_com:OriginatingControlledVocabulary>
+          <inspire_com:KeywordValue>Adressen</inspire_com:KeywordValue>
+        </inspire_com:Keyword>
+        <inspire_com:SupportedLanguages>
+          <inspire_com:DefaultLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
+            <inspire_com:Language>ger</inspire_com:Language>
+          </inspire_com:DefaultLanguage>
+          <inspire_com:SupportedLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
+            <inspire_com:Language>eng</inspire_com:Language>
+          </inspire_com:SupportedLanguage>
+          <inspire_com:SupportedLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
+            <inspire_com:Language>ger</inspire_com:Language>
+          </inspire_com:SupportedLanguage>
+        </inspire_com:SupportedLanguages>
+        <inspire_com:ResponseLanguage>
+          <inspire_com:Language>ger</inspire_com:Language>
+        </inspire_com:ResponseLanguage>
+      </inspire_ds:ExtendedCapabilities>
+    </ows:ExtendedCapabilities>
   </ows:OperationsMetadata>
   <ogc:Filter_Capabilities>
     <ogc:Spatial_Capabilities>
