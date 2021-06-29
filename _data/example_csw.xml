@@ -12,14 +12,8 @@
     </ows:Keywords>
     <ows:ServiceType>CSW</ows:ServiceType>
     <ows:ServiceTypeVersion>2.0.2</ows:ServiceTypeVersion>
-    <ows:Fees>Nutzungsbedingungen: Dieser Datensatz kann gemäß
-                                der "Datenlizenz Deutschland Namensnennung 2.0"
-                                (https://www.govdata.de/dl-de/by-2-0) genutzt
-                                werden.</ows:Fees>
-    <ows:AccessConstraints>{ "id": "dl-by-de/2.0", "name": "Datenlizenz
-                                Deutschland Namensnennung 2.0", "url":
-                                "https://www.govdata.de/dl-de/by-2-0 ", "quelle": "© GDI-Th"
-                                }Nutzungsbedingungen: siehe LizenzGeobasisinformationen werden auf Antrag übermittelt, soweit nicht eine Rechtsvorschrift eine Übermittlung oder Veröffentlichung von Amts wegen vorschreibt. Angaben zu den Grundstückseigentümern und Erbbauberechtigten dürfen übermittelt werden, wenn der Empfänger ein berechtigtes Interesse an der Kenntnis dieser Informationen darlegt. Der Darlegung eines berechtigten Interesses bedarf es nicht zur Übermittlung an öffentliche Stellen. Der Empfänger hat den Zweck der Verwendung der Geobasisinformationen der Vermessungsbehörde auf Verlangen anzuzeigen. Er darf die Geobasisinformationen insbesondere nur zu dem Zweck verwenden, zu dem sie ihm übermittelt worden sind.</ows:AccessConstraints>
+    <ows:Fees>Nutzungsbedingungen: Dieser Datensatz kann gemäß der "Datenlizenz Deutschland Namensnennung 2.0" (https://www.govdata.de/dl-de/by-2-0) genutzt werden.</ows:Fees>
+    <ows:AccessConstraints>Nutzungsbedingungen: siehe LizenzGeobasisinformationen werden auf Antrag übermittelt, soweit nicht eine Rechtsvorschrift eine Übermittlung oder Veröffentlichung von Amts wegen vorschreibt. Angaben zu den Grundstückseigentümern und Erbbauberechtigten dürfen übermittelt werden, wenn der Empfänger ein berechtigtes Interesse an der Kenntnis dieser Informationen darlegt. Der Darlegung eines berechtigten Interesses bedarf es nicht zur Übermittlung an öffentliche Stellen. Der Empfänger hat den Zweck der Verwendung der Geobasisinformationen der Vermessungsbehörde auf Verlangen anzuzeigen. Er darf die Geobasisinformationen insbesondere nur zu dem Zweck verwenden, zu dem sie ihm übermittelt worden sind.</ows:AccessConstraints>
   </ows:ServiceIdentification>
   <ows:ServiceProvider>
     <ows:ProviderName>Thüringer Landesamt für Bodenmanagement und Geoinformation</ows:ProviderName>
