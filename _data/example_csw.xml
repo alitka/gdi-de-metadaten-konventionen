@@ -335,9 +335,6 @@
           <inspire_com:SupportedLanguage>
             <inspire_com:Language>eng</inspire_com:Language>
           </inspire_com:SupportedLanguage>
-          <inspire_com:SupportedLanguage>
-            <inspire_com:Language>ger</inspire_com:Language>
-          </inspire_com:SupportedLanguage>
         </inspire_com:SupportedLanguages>
         <inspire_com:ResponseLanguage>
           <inspire_com:Language>ger</inspire_com:Language>
