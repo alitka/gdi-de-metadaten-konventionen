@@ -48,8 +48,8 @@
     <ows:Operation name="GetCapabilities">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="sections">
@@ -66,8 +66,8 @@
     <ows:Operation name="DescribeRecord">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="outputFormat">
@@ -96,16 +96,16 @@
     <ows:Operation name="GetDomain">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="GetRecords">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="resultType">
