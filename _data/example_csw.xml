@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<csw:Capabilities xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:ows="http://www.opengis.net/ows" xmlns:inspire_ds="http://inspire.ec.europa.eu/schemas/inspire_ds/1.0" xmlns:inspire_com="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0.2" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd http://inspire.ec.europa.eu/schemas/inspire_ds/1.0 http://inspire.ec.europa.eu/schemas/inspire_ds/1.0/inspire_ds.xsd">
+<csw:Capabilities xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:gml="http://www.opengis.net/gml" xmlns:ows="http://www.opengis.net/ows" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:inspire_ds="http://inspire.ec.europa.eu/schemas/inspire_ds/1.0" xmlns:inspire_com="http://inspire.ec.europa.eu/schemas/common/1.0" version="2.0.2" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd http://inspire.ec.europa.eu/schemas/inspire_ds/1.0 http://inspire.ec.europa.eu/schemas/inspire_ds/1.0/inspire_ds.xsd">
   <ows:ServiceIdentification>
     <ows:Title>INSPIRE-compliant Thüringen Discovery Service (CSW)</ows:Title>
     <ows:Abstract>Test metadata for INSPIRE-compliant Discovery Service (CSW) within the GeoNetwork proof-of-concept phase for Thüringer Landesamt für Bodenmanagement und Geoinformation.</ows:Abstract>
@@ -14,10 +14,10 @@
     <ows:ServiceTypeVersion>2.0.2</ows:ServiceTypeVersion>
     <ows:Fees>keine</ows:Fees>
     <ows:AccessConstraints>keine</ows:AccessConstraints>
-   </ows:ServiceIdentification>
+  </ows:ServiceIdentification>
   <ows:ServiceProvider>
     <ows:ProviderName>Thüringer Landesamt für Bodenmanagement und Geoinformation</ows:ProviderName>
-    <ows:ProviderSite xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.geoportal-th.de/de-de/GDI-Th/Kompetenzzentrum-GDI-Th"/>
+    <ows:ProviderSite xlink:href="https://www.geoportal-th.de/de-de/GDI-Th/Kompetenzzentrum-GDI-Th"/>
     <ows:ServiceContact>
       <ows:IndividualName>Kompetenzzentrum Geodateninfrastruktur Thüringen (GDI-Th)</ows:IndividualName>
       <ows:PositionName>Ansprechpartner</ows:PositionName>
@@ -41,8 +41,8 @@
     <ows:Operation name="GetCapabilities">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="sections">
@@ -59,8 +59,8 @@
     <ows:Operation name="DescribeRecord">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="outputFormat">
@@ -89,16 +89,16 @@
     <ows:Operation name="GetDomain">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="GetRecords">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="resultType">
@@ -197,8 +197,8 @@
     <ows:Operation name="GetRecordById">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter xmlns:gfc="http://www.isotc211.org/2005/gfc" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" name="outputSchema">
@@ -234,16 +234,16 @@
     <ows:Operation name="Transaction">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="Harvest">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Get xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Post xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="ResourceType">
@@ -273,6 +273,9 @@
           <inspire_com:MediaType>text/html</inspire_com:MediaType>
         </inspire_com:ResourceLocator>
         <inspire_com:ResourceType>service</inspire_com:ResourceType>
+        <inspire_com:TemporalReference>
+          <inspire_com:DateOfLastRevision>2021-05-21T18:09:00</inspire_com:DateOfLastRevision>
+        </inspire_com:TemporalReference>
         <inspire_com:Conformity>
           <inspire_com:Specification xsi:type="inspire_com:citationInspireInteroperabilityRegulation_ger">
             <inspire_com:Title>VERORDNUNG (EG) Nr. 1089/2010 DER KOMMISSION vom 23. November 2010 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich der Interoperabilität von Geodatensätzen und -diensten</inspire_com:Title>
@@ -305,6 +308,9 @@
           <inspire_com:DefaultLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
             <inspire_com:Language>ger</inspire_com:Language>
           </inspire_com:DefaultLanguage>
+          <inspire_com:SupportedLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
+            <inspire_com:Language>ger</inspire_com:Language>
+          </inspire_com:SupportedLanguage>
           <inspire_com:SupportedLanguage xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0">
             <inspire_com:Language>eng</inspire_com:Language>
           </inspire_com:SupportedLanguage>
