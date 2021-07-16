@@ -109,6 +109,7 @@
 			<Name>Layer</Name>
 			<Title>INSPIRE AU ATKIS-BDLM BB</Title>
 			<Abstract>INSPIRE Verwaltungseinheiten aus ATKIS Basis-DLM in BB</Abstract>
+			<!--
 			<CRS>EPSG:25833</CRS>
 			<CRS>EPSG:25832</CRS>
 			<CRS>EPSG:4326</CRS>
@@ -121,6 +122,7 @@
 			<CRS>EPSG:4839</CRS>
 			<CRS>EPSG:5650</CRS>
 			<CRS>EPSG:4647</CRS>
+-->
 			<CRS>http://www.opengis.net/def/crs/EPSG/0/25833</CRS>
 			<CRS>http://www.opengis.net/def/crs/EPSG/0/25832</CRS>
 			<CRS>http://www.opengis.net/def/crs/EPSG/0/4326</CRS>
@@ -139,6 +141,7 @@
 				<southBoundLatitude>51.2999957016739</southBoundLatitude>
 				<northBoundLatitude>53.5999945122912</northBoundLatitude>
 			</EX_GeographicBoundingBox>
+			<!--
 			<BoundingBox CRS="EPSG:25833" minx="228152" miny="5690412" maxx="493382" maxy="5939023" resx="1" resy="1"/>
 			<BoundingBox CRS="EPSG:25832" minx="625794.536741298" miny="5685280.5860994" maxx="910927.519457639" maxy="5955214.83895806" resx="1" resy="1"/>
 			<BoundingBox CRS="EPSG:4326" minx="51.2999957016739" miny="11.0999882741047" maxx="53.5999945122912" maxy="14.8999944420867" resx="1" resy="1"/> 
@@ -150,6 +153,7 @@
 			<BoundingBox CRS="EPSG:4839" minx="33513.7841376633" miny="41805.4793396569" maxx="297826.875537171" maxy="291103.368749009" resx="1" resy="1"/>
 			<BoundingBox CRS="EPSG:5650" minx="33228151.999999" miny="5690411.99996247" maxx="33493382" maxy="5939023" resx="1" resy="1"/>
 			<BoundingBox CRS="EPSG:4647" minx="32625794.5367413" miny="5685280.5860994" maxx="32910927.5194576" maxy="5955214.83895806" resx="1" resy="1"/>
+-->
 			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/25833" minx="228152" miny="5690412" maxx="493382" maxy="5939023" resx="1" resy="1"/>
 			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/25832" minx="625794.536741298" miny="5685280.5860994" maxx="910927.519457639" maxy="5955214.83895806" resx="1" resy="1"/>
 			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/4326" minx="51.2999957016739" miny="11.0999882741047" maxx="53.5999945122912" maxy="14.8999944420867" resx="1" resy="1"/> 
