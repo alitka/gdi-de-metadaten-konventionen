@@ -1,225 +1,265 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<WMS_Capabilities version="1.3.0" xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sld="http://www.opengis.net/sld" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" xsi:schemaLocation="http://www.opengis.net/wms https://isk.geobasis-bb.de/schema/ogc/wms/1.3.0/capabilities_1_3_0.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 https://isk.geobasis-bb.de/schema/inspire/inspire_vs/1.0/inspire_vs.xsd" updateSequence="2016-01-01">
-	<Service>
-		<Name>WMS</Name>
-		<Title>INSPIRE-WMS BB Verwaltungseinheiten ATKIS Basis-DLM</Title>
-		<Abstract>Dieser Dienst stellt für das INSPIRE-Thema Verwaltungseinheiten aus ATKIS Basis-DLM umgesetzte Daten bereit.</Abstract>
-		<KeywordList>
-			<Keyword>opendata</Keyword>
-			<Keyword>Geobasisdaten</Keyword>
-			<Keyword>AdV</Keyword>
-			<Keyword>WMS</Keyword>
-			<Keyword>AdV-OWS-Basisprofil</Keyword>
-			<Keyword>AdV-WMS-Profil 4.0.0</Keyword>
-			<Keyword>AdV-INSPIRE-Produktspezifikation (Version 1.0.0)</Keyword>
-			<Keyword>BB</Keyword>
-			<Keyword>Brandenburg</Keyword>
-			<Keyword>inspireidentifiziert</Keyword>
-			<Keyword>infoMapAccessService</Keyword>
-			<Keyword>INSPIRE-WMS_BB_Verwaltungseinheiten_ATKIS_Basis-DLM</Keyword>
-			<Keyword>ATKIS</Keyword>
-			<Keyword>Basis-DLM</Keyword>
-			<Keyword>Amtliches Topographisch-Kartographisches Informationssystem</Keyword>
-			<Keyword>Digitales Basis-Landschaftsmodell</Keyword>
-			<Keyword>Verwaltungseinheiten</Keyword>
-			<Keyword>Administrative Units</Keyword>
-		</KeywordList>
-		<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geobroker.geobasis-bb.de/gbss.php?MODE=GetProductPreview&amp;PRODUCTID=a6dfdfe2-9f6c-442e-9256-cadf8d8cf5e0"/>
-		<ContactInformation>
-			<ContactPersonPrimary>
-				<ContactPerson>Kundenservice</ContactPerson>
-				<ContactOrganization>Landesvermessung und Geobasisinformation Brandenburg (LGB)</ContactOrganization>
-			</ContactPersonPrimary>
-			<ContactAddress>
-				<AddressType>postalisch</AddressType>
-				<Address>Heinrich-Mann-Allee 103</Address>
-				<City>Potsdam</City>
-				<StateOrProvince>Brandenburg</StateOrProvince>
-				<PostCode>14473</PostCode>
-				<Country>DE</Country>
-			</ContactAddress>
-			<ContactVoiceTelephone>+49-331-8844-123</ContactVoiceTelephone>
-			<ContactFacsimileTelephone>+49-331-8844-16123</ContactFacsimileTelephone>
-			<ContactElectronicMailAddress>kundenservice@geobasis-bb.de</ContactElectronicMailAddress>
-		</ContactInformation>
-		<Fees>kostenfrei, unter Beachtung der Lizenzbedingungen</Fees>
-		<AccessConstraints>Die Daten können gemäß der „Datenlizenz Deutschland - Namensnennung - Version 2.0“ (https://www.govdata.de/dl-de/by-2-0) genutzt werden. Namensnennung: "GeoBasis-DE/LGB", Beispiel: „© GeoBasis-DE/LGB, dl-de/by-2-0, (Daten geändert)“, (Klammer = optional)</AccessConstraints>
-		<MaxWidth>8000</MaxWidth>
-		<MaxHeight>8000</MaxHeight>
-	</Service>
-	<Capability>
-		<Request>
-			<GetCapabilities>
-				<Format>text/xml</Format>
-				<DCPType>
-					<HTTP>
-						<Get>
-							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://inspire.brandenburg.de/services/au_bdlm_wms?"/>
-						</Get>
-					</HTTP>
-				</DCPType>
-			</GetCapabilities>
-			<GetMap>
-				<Format>image/png</Format>
-				<Format>image/jpeg</Format>
-				<Format>image/gif</Format>
-				<DCPType>
-					<HTTP>
-						<Get>
-							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://inspire.brandenburg.de/services/au_bdlm_wms?"/>
-						</Get>
-						<Post>
-							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://inspire.brandenburg.de/services/au_bdlm_wms"/>
-						</Post>
-					</HTTP>
-				</DCPType>
-			</GetMap>
-			<GetFeatureInfo>
-				<Format>text/xml;subtype=gml/3.2.1</Format>
-				<Format>text/html</Format>
-				<DCPType>
-					<HTTP>
-						<Get>
-							<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://inspire.brandenburg.de/services/au_bdlm_wms?"/>
-						</Get>
-					</HTTP>
-				</DCPType>
-			</GetFeatureInfo>
-		</Request>
-		<Exception>
-			<Format>XML</Format>
-			<Format>INIMAGE</Format>
-			<Format>BLANK</Format>
-		</Exception>
-		<inspire_vs:ExtendedCapabilities>
-			<inspire_common:MetadataUrl>
-				<inspire_common:URL>https://geoportal.brandenburg.de/csw-gdi-bb/service?REQUEST=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;resultType=results&amp;typeNames=csw:Record&amp;elementSetName=full&amp;ID=a6dfdfe2-9f6c-442e-9256-cadf8d8cf5e0</inspire_common:URL>
-				<inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
-			</inspire_common:MetadataUrl>
-			<inspire_common:SupportedLanguages>
-				<inspire_common:DefaultLanguage>
-					<inspire_common:Language>ger</inspire_common:Language>
-				</inspire_common:DefaultLanguage>
-			</inspire_common:SupportedLanguages>
-			<inspire_common:ResponseLanguage>
-				<inspire_common:Language>ger</inspire_common:Language>
-			</inspire_common:ResponseLanguage>
-		</inspire_vs:ExtendedCapabilities>
-		<Layer queryable="0">
-			<Name>Layer</Name>
-			<Title>INSPIRE AU ATKIS-BDLM BB</Title>
-			<Abstract>INSPIRE Verwaltungseinheiten aus ATKIS Basis-DLM in BB</Abstract>
-			<!--
-			<CRS>EPSG:25833</CRS>
-			<CRS>EPSG:25832</CRS>
-			<CRS>EPSG:4326</CRS>
-			<CRS>EPSG:4258</CRS>
-			<CRS>EPSG:3034</CRS>
-			<CRS>EPSG:3035</CRS>
-			<CRS>EPSG:3044</CRS>
-			<CRS>EPSG:3045</CRS>
-			<CRS>EPSG:3857</CRS>
-			<CRS>EPSG:4839</CRS>
-			<CRS>EPSG:5650</CRS>
-			<CRS>EPSG:4647</CRS>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<WMS_Capabilities version="1.3.0" xmlns="http://www.opengis.net/wms" xmlns:sld="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ms="http://mapserver.gis.umn.edu/mapserver" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" xsi:schemaLocation="http://www.opengis.net/wms http://schemas.opengis.net/wms/1.3.0/capabilities_1_3_0.xsd  http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/sld_capabilities.xsd  http://inspire.ec.europa.eu/schemas/inspire_vs/1.0  http://inspire.ec.europa.eu/schemas/inspire_vs/1.0/inspire_vs.xsd http://mapserver.gis.umn.edu/mapserver http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;service=WMS&amp;version=1.3.0&amp;request=GetSchemaExtension">
+
+<!-- MapServer version 6.4.1 OUTPUT=GIF OUTPUT=PNG OUTPUT=JPEG OUTPUT=KML SUPPORTS=PROJ SUPPORTS=GD SUPPORTS=AGG SUPPORTS=FREETYPE SUPPORTS=CAIRO SUPPORTS=SVG_SYMBOLS SUPPORTS=SVGCAIRO SUPPORTS=ICONV SUPPORTS=FRIBIDI SUPPORTS=WMS_SERVER SUPPORTS=WMS_CLIENT SUPPORTS=WFS_SERVER SUPPORTS=WFS_CLIENT SUPPORTS=WCS_SERVER SUPPORTS=SOS_SERVER SUPPORTS=FASTCGI SUPPORTS=THREADS SUPPORTS=GEOS INPUT=JPEG INPUT=POSTGIS INPUT=OGR INPUT=GDAL INPUT=SHAPEFILE -->
+
+<Service>
+  <Name>WMS</Name>
+  <Title>Städtebauliche Satzungen</Title>
+  <Abstract>Städtebauliche Satzungen Sanierungsgebiete/Stellplatzablösung/Erhaltung/Gestaltung.</Abstract>
+  <KeywordList>
+      <Keyword>Bielefeld</Keyword>
+      <Keyword>BI</Keyword>
+      <Keyword>Ostwestfalen-Lippe</Keyword>
+      <Keyword>OWL</Keyword>
+      <Keyword>Nordrhein-Westfalen</Keyword>
+      <Keyword>NRW</Keyword>
+      <Keyword>Deutschland</Keyword>
+      <Keyword>Germany</Keyword>
+      <Keyword>BRD</Keyword>
+      <Keyword>Europa</Keyword>
+      <Keyword>Europe</Keyword>
+      <Keyword>EU</Keyword>
+  </KeywordList>
+  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.bielefeld01.de/geo/geoportal.php"/>
+  <ContactInformation>
+    <ContactPersonPrimary>
+      <ContactPerson>Jürgen Kobusch</ContactPerson>
+      <ContactOrganization>Stadt Bielefeld - Amt für Geoinformation und Kataster</ContactOrganization>
+    </ContactPersonPrimary>
+      <ContactPosition>Abteilungsleiter Geodatenmanagement und Verwaltung</ContactPosition>
+    <ContactAddress>
+        <AddressType>postal</AddressType>
+        <Address>August-Bebel-Straße 92</Address>
+        <City>Bielefeld</City>
+        <StateOrProvince>Nordrhein-Westfalen</StateOrProvince>
+        <PostCode>33602</PostCode>
+        <Country>Germany</Country>
+    </ContactAddress>
+      <ContactVoiceTelephone>+49(521)51-3148</ContactVoiceTelephone>
+      <ContactFacsimileTelephone>+49(521)51-3433</ContactFacsimileTelephone>
+  <ContactElectronicMailAddress>geoinformationundkataster@bielefeld.de</ContactElectronicMailAddress>
+  </ContactInformation>
+  <Fees>none</Fees>
+  <AccessConstraints>Siehe Metadaten!!!</AccessConstraints>
+  <MaxWidth>15000</MaxWidth>
+  <MaxHeight>15000</MaxHeight>
+</Service>
+
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <Format>text/xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetCapabilities>
+    <GetMap>
+      <Format>image/png</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetMap>
+    <GetFeatureInfo>
+      <Format>text/html</Format>
+      <Format>application/vnd.ogc.gml</Format>
+      <Format>text/plain</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetFeatureInfo>
+<!--    <sld:DescribeLayer>
+      <Format>text/xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </sld:DescribeLayer>
+    <sld:GetLegendGraphic>
+      <Format>image/png</Format>
+      <Format>image/jpeg</Format>
+      <Format>image/gif</Format>
+      <Format>image/png; mode=8bit</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </sld:GetLegendGraphic>
 -->
-			<CRS>http://www.opengis.net/def/crs/EPSG/0/25833</CRS>
-			<CRS>http://www.opengis.net/def/crs/EPSG/0/25832</CRS>
-			<CRS>http://www.opengis.net/def/crs/EPSG/0/4326</CRS>
-			<CRS>http://www.opengis.net/def/crs/EPSG/0/4258</CRS>
-			<CRS>http://www.opengis.net/def/crs/EPSG/0/3034</CRS>
-			<CRS>http://www.opengis.net/def/crs/EPSG/0/3035</CRS>
-			<CRS>http://www.opengis.net/def/crs/EPSG/0/3044</CRS>
-			<CRS>http://www.opengis.net/def/crs/EPSG/0/3045</CRS>
-			<CRS>http://www.opengis.net/def/crs/EPSG/0/3857</CRS>
-			<CRS>http://www.opengis.net/def/crs/EPSG/0/4839</CRS>
-			<CRS>http://www.opengis.net/def/crs/EPSG/0/5650</CRS>
-			<CRS>http://www.opengis.net/def/crs/EPSG/0/4647</CRS>
-			<EX_GeographicBoundingBox>
-				<westBoundLongitude>10.8978490830899</westBoundLongitude>
-				<eastBoundLongitude>14.9049379960258</eastBoundLongitude>
-				<southBoundLatitude>51.2999957016739</southBoundLatitude>
-				<northBoundLatitude>53.5999945122912</northBoundLatitude>
-			</EX_GeographicBoundingBox>
-			<!--
-			<BoundingBox CRS="EPSG:25833" minx="228152" miny="5690412" maxx="493382" maxy="5939023" resx="1" resy="1"/>
-			<BoundingBox CRS="EPSG:25832" minx="625794.536741298" miny="5685280.5860994" maxx="910927.519457639" maxy="5955214.83895806" resx="1" resy="1"/>
-			<BoundingBox CRS="EPSG:4326" minx="51.2999957016739" miny="11.0999882741047" maxx="53.5999945122912" maxy="14.8999944420867" resx="1" resy="1"/> 
-			<BoundingBox CRS="EPSG:3034" minx="2725337.83351404" miny="4074079.90884607" maxx="2982432.33771219" maxy="4313382.25302754" resx="1" resy="1"/>
-			<BoundingBox CRS="EPSG:3035" minx="3132694.44665344" miny="4397714.6851617" maxx="3399003.9057543" maxy="4645148.41163017" resx="1" resy="1"/>
-			<BoundingBox CRS="EPSG:3044" minx="5685280.5860994" miny="646395.940082372" maxx="5955214.83895806" maxy="890235.390177993" resx="1" resy="1"/>
-			<BoundingBox CRS="EPSG:3045" minx="5690411.99996247" miny="228151.999999013" maxx="5939023" maxy="493382" resx="1" resy="1"/>
-			<BoundingBox CRS="EPSG:3857" minx="1213143.01067151" miny="6674532.03302645" maxx="1659210.10802291" maxy="7094761.09393721" resx="1" resy="1"/>
-			<BoundingBox CRS="EPSG:4839" minx="33513.7841376633" miny="41805.4793396569" maxx="297826.875537171" maxy="291103.368749009" resx="1" resy="1"/>
-			<BoundingBox CRS="EPSG:5650" minx="33228151.999999" miny="5690411.99996247" maxx="33493382" maxy="5939023" resx="1" resy="1"/>
-			<BoundingBox CRS="EPSG:4647" minx="32625794.5367413" miny="5685280.5860994" maxx="32910927.5194576" maxy="5955214.83895806" resx="1" resy="1"/>
--->
-			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/25833" minx="228152" miny="5690412" maxx="493382" maxy="5939023" resx="1" resy="1"/>
-			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/25832" minx="625794.536741298" miny="5685280.5860994" maxx="910927.519457639" maxy="5955214.83895806" resx="1" resy="1"/>
-			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/4326" minx="51.2999957016739" miny="11.0999882741047" maxx="53.5999945122912" maxy="14.8999944420867" resx="1" resy="1"/> 
-			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/3034" minx="2725337.83351404" miny="4074079.90884607" maxx="2982432.33771219" maxy="4313382.25302754" resx="1" resy="1"/>
-			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/3035" minx="3132694.44665344" miny="4397714.6851617" maxx="3399003.9057543" maxy="4645148.41163017" resx="1" resy="1"/>
-			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/3044" minx="5685280.5860994" miny="646395.940082372" maxx="5955214.83895806" maxy="890235.390177993" resx="1" resy="1"/>
-			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/3045" minx="5690411.99996247" miny="228151.999999013" maxx="5939023" maxy="493382" resx="1" resy="1"/>
-			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/3857" minx="1213143.01067151" miny="6674532.03302645" maxx="1659210.10802291" maxy="7094761.09393721" resx="1" resy="1"/>
-			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/4839" minx="33513.7841376633" miny="41805.4793396569" maxx="297826.875537171" maxy="291103.368749009" resx="1" resy="1"/>
-			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/5650" minx="33228151.999999" miny="5690411.99996247" maxx="33493382" maxy="5939023" resx="1" resy="1"/>
-			<BoundingBox CRS="http://www.opengis.net/def/crs/EPSG/0/4647" minx="32625794.5367413" miny="5685280.5860994" maxx="32910927.5194576" maxy="5955214.83895806" resx="1" resy="1"/>
-			<Layer queryable="1">
-				<Name>AU.AdministrativeUnit</Name>
-				<Title>Verwaltungseinheit</Title>
-				<Abstract>Verwaltungseinheit</Abstract>
-				<KeywordList>
-					<Keyword>Administrative Unit</Keyword>
-					<Keyword>Verwaltungseinheit</Keyword>
-				</KeywordList>
-				<AuthorityURL name="lgb">
-					<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geoportal.brandenburg.de/registry/lgb"/>
-				</AuthorityURL>
-				<MetadataURL type="ISO19115:2003">
-					<Format>text/xml</Format>
-					<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geoportal.brandenburg.de/csw-gdi-bb/service?REQUEST=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;resultType=results&amp;typeNames=csw:Record&amp;elementSetName=full&amp;ID=0cbc19b7-169c-467a-828d-380bc4793e50"/>
-				</MetadataURL>
-				<Style>
-					<Name>AU.AdministrativeUnit.Default</Name>
-					<Title>AU.AdministrativeUnit.Default</Title>
-					<Abstract>AU.AdministrativeUnit.Default</Abstract>
-					<LegendURL width="139" height="27">
-						<Format>image/png</Format>
-						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://isk.geobasis-bb.de/legends/AU.AdministrativeUnit.Default.png"/>
-					</LegendURL>
-				</Style>
-				<MinScaleDenominator>0</MinScaleDenominator>
-				<MaxScaleDenominator>5000000</MaxScaleDenominator>
-			</Layer>
-			<Layer queryable="1">
-				<Name>AU.AdministrativeBoundary</Name>
-				<Title>Verwaltungsgrenze</Title>
-				<Abstract>Verwaltungsgrenze</Abstract>
-				<KeywordList>
-					<Keyword>Administrative Boundary</Keyword>
-					<Keyword>Verwaltungsgrenze</Keyword>
-					<Keyword>boundary</Keyword>
-				</KeywordList>
-				<AuthorityURL name="lgb">
-					<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geoportal.brandenburg.de/registry/lgb"/>
-				</AuthorityURL>
-				<MetadataURL type="ISO19115:2003">
-					<Format>text/xml</Format>
-					<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://geoportal.brandenburg.de/csw-gdi-bb/service?REQUEST=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;resultType=results&amp;typeNames=csw:Record&amp;elementSetName=full&amp;ID=0cbc19b7-169c-467a-828d-380bc4793e50"/>
-				</MetadataURL>
-				<Style>
-					<Name>AU.AdministrativeBoundary.Default</Name>
-					<Title>AU.AdministrativeBoundary.Default</Title>
-					<Abstract>AU.AdministrativeBoundary.Default</Abstract>
-					<LegendURL width="171" height="27">
-						<Format>image/png</Format>
-						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://isk.geobasis-bb.de/legends/AU.AdministrativeBoundary.Default.png"/>
-					</LegendURL>
-				</Style>
-				<MinScaleDenominator>0</MinScaleDenominator>
-				<MaxScaleDenominator>5000000</MaxScaleDenominator>
-			</Layer>
-		</Layer>
-	</Capability>
+    <ms:GetStyles>
+      <Format>text/xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;"/></Post>
+        </HTTP>
+      </DCPType>
+    </ms:GetStyles>
+  </Request>
+  <Exception>
+    <Format>XML</Format>
+    <Format>INIMAGE</Format>
+    <Format>BLANK</Format>
+  </Exception>
+  <sld:UserDefinedSymbolization SupportSLD="1" UserLayer="0" UserStyle="1" RemoteWFS="0" InlineFeature="0" RemoteWCS="0"/>
+  <inspire_vs:ExtendedCapabilities>
+    <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
+      <inspire_common:URL>https://apps.geoportal.nrw.de/csw/service?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=f682b321-7e57-4558-bde7-818dcdf28b46</inspire_common:URL>
+      <inspire_common:MediaType>application/xml;charset=UTF-8</inspire_common:MediaType>
+    </inspire_common:MetadataUrl>
+    <inspire_common:SupportedLanguages>
+      <inspire_common:DefaultLanguage><inspire_common:Language>ger</inspire_common:Language></inspire_common:DefaultLanguage>
+      <inspire_common:SupportedLanguage><inspire_common:Language>eng</inspire_common:Language></inspire_common:SupportedLanguage>
+    </inspire_common:SupportedLanguages>
+    <inspire_common:ResponseLanguage><inspire_common:Language>ger</inspire_common:Language></inspire_common:ResponseLanguage>
+  </inspire_vs:ExtendedCapabilities>
+  <Layer>
+    <Name>satzungen_wms</Name>
+    <Title>Städtebauliche Satzungen</Title>
+    <Abstract>Städtebauliche Satzungen Sanierungsgebiete/Stellplatzablösung/Erhaltung/Gestaltung.</Abstract>
+    <KeywordList>
+        <Keyword>Bielefeld</Keyword>
+        <Keyword>BI</Keyword>
+        <Keyword>Ostwestfalen-Lippe</Keyword>
+        <Keyword>OWL</Keyword>
+        <Keyword>Nordrhein-Westfalen</Keyword>
+        <Keyword>NRW</Keyword>
+        <Keyword>Deutschland</Keyword>
+        <Keyword>Germany</Keyword>
+        <Keyword>BRD</Keyword>
+        <Keyword>Europa</Keyword>
+        <Keyword>Europe</Keyword>
+        <Keyword>EU</Keyword>
+    </KeywordList>
+    <CRS>EPSG:25832</CRS>
+    <CRS>EPSG:31467</CRS>
+    <CRS>EPSG:31466</CRS>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:4258</CRS>
+    <CRS>EPSG:3038</CRS>
+    <CRS>EPSG:3039</CRS>
+    <CRS>EPSG:3040</CRS>
+    <CRS>EPSG:3041</CRS>
+    <CRS>EPSG:3042</CRS>
+    <CRS>EPSG:3043</CRS>
+    <CRS>EPSG:3044</CRS>
+    <CRS>EPSG:3045</CRS>
+    <CRS>EPSG:3046</CRS>
+    <CRS>EPSG:3047</CRS>
+    <CRS>EPSG:3857</CRS>
+    <CRS>EPSG:900913</CRS>
+    <EX_GeographicBoundingBox>
+        <westBoundLongitude>8.37579</westBoundLongitude>
+        <eastBoundLongitude>8.6868</eastBoundLongitude>
+        <southBoundLatitude>51.9143</southBoundLatitude>
+        <northBoundLatitude>52.1154</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:25832" minx="457257" miny="5.75169e+006" maxx="478458" maxy="5.77392e+006"/>
+    <BoundingBox CRS="EPSG:31467" minx="5.75355e+006" miny="3.45731e+006" maxx="5.77579e+006" maxy="3.47852e+006"/>
+    <BoundingBox CRS="EPSG:31466" minx="5.75589e+006" miny="2.66272e+006" maxx="5.77899e+006" maxy="2.68483e+006"/>
+    <BoundingBox CRS="EPSG:4326" minx="51.9143" miny="8.37579" maxx="52.1154" maxy="8.6868"/>
+    <BoundingBox CRS="EPSG:4258" minx="51.9143" miny="8.37579" maxx="52.1154" maxy="8.6868"/>
+    <BoundingBox CRS="EPSG:3038" minx="6.3658e+006" miny="2.87509e+006" maxx="6.39774e+006" maxy="2.90661e+006"/>
+    <BoundingBox CRS="EPSG:3039" minx="6.1704e+006" miny="2.4862e+006" maxx="6.20085e+006" maxy="2.51611e+006"/>
+    <BoundingBox CRS="EPSG:3040" minx="6.01425e+006" miny="2.08862e+006" maxx="6.04313e+006" maxy="2.11685e+006"/>
+    <BoundingBox CRS="EPSG:3041" minx="5.89558e+006" miny="1.68509e+006" maxx="5.92285e+006" maxy="1.7116e+006"/>
+    <BoundingBox CRS="EPSG:3042" minx="5.81293e+006" miny="1.27768e+006" maxx="5.83855e+006" maxy="1.30245e+006"/>
+    <BoundingBox CRS="EPSG:3043" minx="5.76518e+006" miny="867978" maxx="5.78913e+006" maxy="890983"/>
+    <BoundingBox CRS="EPSG:3044" minx="5.75169e+006" miny="457257" maxx="5.77392e+006" maxy="478458"/>
+    <BoundingBox CRS="EPSG:3045" minx="5.77049e+006" miny="44810.3" maxx="5.79446e+006" maxy="67830.6"/>
+    <BoundingBox CRS="EPSG:3046" minx="5.82362e+006" miny="-366397" maxx="5.84928e+006" maxy="-341592"/>
+    <BoundingBox CRS="EPSG:3047" minx="5.9118e+006" miny="-775064" maxx="5.93913e+006" maxy="-748495"/>
+    <BoundingBox CRS="EPSG:3857" minx="932388" miny="6.78464e+006" maxx="967010" maxy="6.82101e+006"/>
+    <BoundingBox CRS="EPSG:900913" minx="932388" miny="6.78464e+006" maxx="967010" maxy="6.82101e+006"/>
+    <AuthorityURL name="GDI-BI">
+      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://registry.gdi-de.org/id/de.nw/"/>
+    </AuthorityURL>
+    <MetadataURL type="ISO19115:2003">
+      <Format>application/xml;charset=UTF-8</Format>
+      <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://apps.geoportal.nrw.de/csw/service?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=f682b321-7e57-4558-bde7-818dcdf28b46"/>
+    </MetadataURL>
+    <Style>
+       <Name>default</Name>
+       <Title>default</Title>
+       <LegendURL width="165" height="111">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=satzungen_wms&amp;format=image/png&amp;STYLE=default"/>
+       </LegendURL>
+    </Style>
+    <Layer queryable="1" opaque="0" cascaded="0">
+        <Name>satzungsgebiete_pl</Name>
+        <Title>Städtebauliche Satzungen</Title>
+        <Abstract>Städtebauliche Satzungen Sanierungsgebiete/Stellplatzablösung/Erhaltung/Gestaltung.</Abstract>
+        <KeywordList>
+            <Keyword>Sanierungsgebiete</Keyword>
+        </KeywordList>
+        <CRS>EPSG:25832</CRS>
+        <CRS>EPSG:31467</CRS>
+        <CRS>EPSG:31466</CRS>
+        <CRS>EPSG:4326</CRS>
+        <CRS>EPSG:4258</CRS>
+        <CRS>EPSG:3038</CRS>
+        <CRS>EPSG:3039</CRS>
+        <CRS>EPSG:3040</CRS>
+        <CRS>EPSG:3041</CRS>
+        <CRS>EPSG:3042</CRS>
+        <CRS>EPSG:3043</CRS>
+        <CRS>EPSG:3044</CRS>
+        <CRS>EPSG:3045</CRS>
+        <CRS>EPSG:3046</CRS>
+        <CRS>EPSG:3047</CRS>
+        <CRS>EPSG:3857</CRS>
+        <CRS>EPSG:900913</CRS>
+        <EX_GeographicBoundingBox>
+            <westBoundLongitude>8.37579</westBoundLongitude>
+            <eastBoundLongitude>8.6868</eastBoundLongitude>
+            <southBoundLatitude>51.9143</southBoundLatitude>
+            <northBoundLatitude>52.1154</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="EPSG:25832" minx="457257" miny="5.75169e+006" maxx="478458" maxy="5.77392e+006"/>
+        <BoundingBox CRS="EPSG:31467" minx="5.75355e+006" miny="3.45731e+006" maxx="5.77579e+006" maxy="3.47852e+006"/>
+        <BoundingBox CRS="EPSG:31466" minx="5.75589e+006" miny="2.66272e+006" maxx="5.77899e+006" maxy="2.68483e+006"/>
+        <BoundingBox CRS="EPSG:4326" minx="51.9143" miny="8.37579" maxx="52.1154" maxy="8.6868"/>
+        <BoundingBox CRS="EPSG:4258" minx="51.9143" miny="8.37579" maxx="52.1154" maxy="8.6868"/>
+        <BoundingBox CRS="EPSG:3038" minx="6.3658e+006" miny="2.87509e+006" maxx="6.39774e+006" maxy="2.90661e+006"/>
+        <BoundingBox CRS="EPSG:3039" minx="6.1704e+006" miny="2.4862e+006" maxx="6.20085e+006" maxy="2.51611e+006"/>
+        <BoundingBox CRS="EPSG:3040" minx="6.01425e+006" miny="2.08862e+006" maxx="6.04313e+006" maxy="2.11685e+006"/>
+        <BoundingBox CRS="EPSG:3041" minx="5.89558e+006" miny="1.68509e+006" maxx="5.92285e+006" maxy="1.7116e+006"/>
+        <BoundingBox CRS="EPSG:3042" minx="5.81293e+006" miny="1.27768e+006" maxx="5.83855e+006" maxy="1.30245e+006"/>
+        <BoundingBox CRS="EPSG:3043" minx="5.76518e+006" miny="867978" maxx="5.78913e+006" maxy="890983"/>
+        <BoundingBox CRS="EPSG:3044" minx="5.75169e+006" miny="457257" maxx="5.77392e+006" maxy="478458"/>
+        <BoundingBox CRS="EPSG:3045" minx="5.77049e+006" miny="44810.3" maxx="5.79446e+006" maxy="67830.6"/>
+        <BoundingBox CRS="EPSG:3046" minx="5.82362e+006" miny="-366397" maxx="5.84928e+006" maxy="-341592"/>
+        <BoundingBox CRS="EPSG:3047" minx="5.9118e+006" miny="-775064" maxx="5.93913e+006" maxy="-748495"/>
+        <BoundingBox CRS="EPSG:3857" minx="932388" miny="6.78464e+006" maxx="967010" maxy="6.82101e+006"/>
+        <BoundingBox CRS="EPSG:900913" minx="932388" miny="6.78464e+006" maxx="967010" maxy="6.82101e+006"/>
+        <Identifier authority="GDI-BI">https://registry.gdi-de.org/id/de.nw/2f54d1bf-84f7-47fb-b09d-0986bbed5521</Identifier>
+        <MetadataURL type="ISO19115:2003">
+          <Format>application/xml;charset=UTF-8</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://apps.geoportal.nrw.de/csw/service?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=d696f495-0643-444e-9786-558195c21b28"/>
+        </MetadataURL>
+        <Style>
+          <Name>satzungsgebiete_pl_style</Name>
+          <Title>satzungsgebiete_pl_style</Title>
+          <LegendURL width="165" height="111">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.bielefeld01.de/geo/extern_free/wms.php?url=satzungen_wms_641&amp;language=ger&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=satzungsgebiete_pl&amp;format=image/png&amp;STYLE=satzungsgebiete_pl_style"/>
+          </LegendURL>
+        </Style>
+    </Layer>
+  </Layer>
+</Capability>
 </WMS_Capabilities>
