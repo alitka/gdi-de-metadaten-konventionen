@@ -98,7 +98,6 @@
         </HTTP>
       </DCPType>
     </sld:GetLegendGraphic>
--->
     <ms:GetStyles>
       <Format>text/xml</Format>
       <DCPType>
@@ -108,6 +107,7 @@
         </HTTP>
       </DCPType>
     </ms:GetStyles>
+-->
   </Request>
   <Exception>
     <Format>XML</Format>
