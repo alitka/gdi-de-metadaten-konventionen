@@ -86,7 +86,7 @@
   <inspire_vs:ExtendedCapabilities>
     <inspire_common:MetadataUrl xsi:type="inspire_common:resourceLocatorType">
       <inspire_common:URL>https://apps.geoportal.nrw.de/csw/service?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=f682b321-7e57-4558-bde7-818dcdf28b46</inspire_common:URL>
-      <inspire_common:MediaType>application/xml;charset=UTF-8</inspire_common:MediaType>
+      <inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>
     </inspire_common:MetadataUrl>
     <inspire_common:SupportedLanguages>
       <inspire_common:DefaultLanguage><inspire_common:Language>ger</inspire_common:Language></inspire_common:DefaultLanguage>
