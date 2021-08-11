@@ -1,4 +1,5 @@
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
 title: GDI-DE Arbeitskreis Metadaten
 description: GDI-DE Architektur der Geodateninfrastruktur Deutschland - Konventionen zu Metadaten
 show_downloads: "true"
