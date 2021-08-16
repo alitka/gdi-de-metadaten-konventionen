@@ -1,8 +1,12 @@
 theme: jekyll-theme-dinky
+remote_theme: pages-themes/dinky@v0.2.0
 title: GDI-DE Arbeitskreis Metadaten
 description: GDI-DE Architektur der Geodateninfrastruktur Deutschland - Konventionen zu Metadaten
 show_downloads: "true"
 github:
   zip_url: https://www.gdi-de.org/SharedDocs/Downloads/DE/GDI-DE/Dokumente/Konventionen_zu_Metadaten_V2.0.3.pdf
-  another_url: https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/publications.md
-  another_url: https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/talks.html
+  another_url: https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/kap1.md
+  another_url: https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/kap2.md
+
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
