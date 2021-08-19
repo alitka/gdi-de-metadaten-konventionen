@@ -6,7 +6,7 @@ GDI-DE Architektur der Geodateninfrastruktur Deutschland - Konventionen zu Metad
 ## Kapitel
 
 1. [Einführung](./einfuehrung.md)
-2. [Grundsätzliche Konventionen für alle Metadaten](./grundsatz.html)
+2. [Grundsätzliche Konventionen für alle Metadaten](./grundsatz.md)
 
 ## Hinweise zum Dokument
 
@@ -14,7 +14,7 @@ Die Festlegungen in diesem Dokument sind für die Metadaten-Sprache „Deutsch�
 
 Den einzelnen Festlegungen in diesem Dokument ist jeweils ein XPath-Ausdruck vorangestellt:
 
-**```XPath:```**```MD_Metadata/```
+**```XPath:```** ```MD_Metadata/```
 
 Dieser adressiert bzw. beschreibt die Position des betreffenden Metadatenelementes im XML-Dokument. Die Kodierung des Elementes in XML wird jeweils wie folgt exemplarisch dargestellt:
 
