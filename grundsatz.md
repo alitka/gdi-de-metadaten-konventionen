@@ -9,7 +9,7 @@ Die Konventionen in diesem Kapitel betreffen die Metadaten zu allen Ressourcen i
 | GDI-DE |x| | |
 | zusätzlich für INSPIRE |  |  | |
 
-**```XPath: ```**```MD_Metadata/identificationInfo[1]```
+**```XPath:```** ```MD_Metadata/identificationInfo[1]```
 
 Um die Einheitlichkeit und eindeutige Interpretierbarkeit der Metadaten in der GDI-DE zu fördern, gilt als Konvention für alle Metadaten in der GDI-DE:
 Alle relevanten Informationen sind im ersten identificationInfo-Element anzugeben.
