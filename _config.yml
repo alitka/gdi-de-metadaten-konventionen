@@ -5,10 +5,8 @@ description: GDI-DE Architektur der Geodateninfrastruktur Deutschland - Konventi
 show_downloads: "true"
 github:
   zip_url: https://www.gdi-de.org/SharedDocs/Downloads/DE/GDI-DE/Dokumente/Konventionen_zu_Metadaten_V2.0.3.pdf
-  another_url: https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/grundsatz.md
-  another_url: https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/einfuehrung.md
-
-[Link to another page](./another-page.html).
+#  another_url: https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/grundsatz.md
+#  another_url: https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/einfuehrung.md
 
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
