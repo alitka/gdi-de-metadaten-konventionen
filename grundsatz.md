@@ -4,6 +4,7 @@
 Die Konventionen in diesem Kapitel betreffen die Metadaten zu allen Ressourcen in der GDI-DE, unabhängig von der Art der Ressource im hierarchyLevel-Element (siehe 2.3).
 
 ## Multiplizität des identificationInfo-Elementes
+
 | | verpflichtend | konditional | optional |
 |:--|:--|:--|:--|
 | GDI-DE |x| | |
