@@ -6,7 +6,7 @@ Die Konventionen in diesem Kapitel betreffen die Metadaten zu allen Ressourcen i
 ## Multiplizität des identificationInfo-Elementes
 | | verpflichtend | konditional | optional |
 |:--|:--|:--|:--|
- GDI-DE | x | | |
+| GDI-DE |x| | |
 | zusätzlich für INSPIRE |  |  | |
 
 **```XPath: ```**```MD_Metadata/identificationInfo[1]```
