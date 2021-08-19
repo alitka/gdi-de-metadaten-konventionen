@@ -3,6 +3,10 @@ GDI-DE Architektur der Geodateninfrastruktur Deutschland - Konventionen zu Metad
 
 <!-- tutorial for creating guthub-pages: https://academicpages.github.io/ -->
 
+## Kapitel
+
+[Einführung](./_pages/einfuehrung.html)
+
 ## Hinweise zum Dokument
 
 Die Festlegungen in diesem Dokument sind für die Metadaten-Sprache „Deutsch“ getroffen, sofern  durch ISO oder INSPIRE keine anderen Forderungen bestehen.
