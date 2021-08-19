@@ -5,7 +5,8 @@ GDI-DE Architektur der Geodateninfrastruktur Deutschland - Konventionen zu Metad
 
 ## Kapitel
 
-[Einführung](./_pages/einfuehrung.html)
+1. [Einführung](https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/einfuehrung.html)
+2. [Grundsätzliche Konventionen für alle Metadaten](https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/grundsatz.html)
 
 ## Hinweise zum Dokument
 
