@@ -1,4 +1,4 @@
-[zurück zur Startseite](./)
+[zurück zur Startseite](https://github.com/alitka/gdi-de-metadaten-konventionen)
 
 # Einführung
 ## Die Architektur der Geodateninfrastruktur Deutschland
@@ -52,4 +52,4 @@ Eine Beschreibung der zentralen Komponente „Geodatenkatalog.de“ der GDI-DE e
 Durch die Topologie der Metadatenkataloge ist es notwendig, dass Änderungen eines Katalogs überall dort nachvollzogen werden, wo dessen Bestand übernommen wird. Wird also ein Metadatensatz in einem Katalog gelöscht, so wird er auch in allen anderen Katalogen entfernt, welche diesen Katalog harvesten, da der fileIdentifier des Metadatensatzes und damit der Metadatensatz
 selbst nicht mehr auffindbar ist. Übernommen werden zugleich alle „neuen“ Metadaten mit einem bisher nicht vorhandenen fileIdentifier und alle geänderten Metadaten, deren fileIdentifier bereits bekannt sind, die jedoch einen aktualisierten Zeitstempel tragen.
 
-[zurück zur Startseite](./)
+[zurück zur Startseite](https://github.com/alitka/gdi-de-metadaten-konventionen)
