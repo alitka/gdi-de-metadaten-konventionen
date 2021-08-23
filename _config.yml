@@ -6,6 +6,7 @@ show_downloads: "true"
 github:
   zip_url: https://wiki.gdi-de.org/download/attachments/3344909/Architektur_GDI_DE_Konventionen_Metadaten_v2_0_3.pdf
   another_url: https://wiki.gdi-de.org/display/AKMD
+  repository_url: https://github.com/alitka/gdi-de-metadaten-ats/tree/2.0.3
 
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
