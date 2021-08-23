@@ -18,10 +18,12 @@ Den einzelnen Festlegungen in diesem Dokument ist jeweils ein XPath-Ausdruck vor
 
 Dieser adressiert bzw. beschreibt die Position des betreffenden Metadatenelementes im XML-Dokument. Die Kodierung des Elementes in XML wird jeweils wie folgt exemplarisch dargestellt:
 
-**```Beispiel:```**```
+**```Beispiel:```**
+```
 <gmd:MD_Metadata>
 ...
-</gmd:MD_Metadata>```
+</gmd:MD_Metadata>
+```
 
 Die einzelnen Festlegungen des Dokumentes enthalten am Anfang jeweils folgende Tabelle:
 
@@ -48,8 +50,10 @@ Die dabei verwendeten Bezeichnungen von Metadatenelementen beziehen sich auf die
 
 Jede Festlegung in diesem Dokument endet mit einem Verweis auf die dazugehörige Testbeschreibung in Form einer Abstract Testsuite (ATS). Dort sind die jeweiligen Testschritte, welche in der GDI-DE Testsuite implementiert wurden, im Detail beschrieben:
 
-**```ATS:```**```
-https://ims.geoportal.de/git/tree/AK-Metadaten.git/version2.0.0/konventionen!ats```
+**```ATS:```**
+```
+https://ims.geoportal.de/git/tree/AK-Metadaten.git/version2.0.0/konventionen!ats
+```
 
 Als Referenz werden unter https://ims.geoportal.de/git/tree/AK-Metadaten.git/version2.0.0/konventionen!beispiel_xml
 Beispieldokumente bereitgestellt:
