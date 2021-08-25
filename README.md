@@ -7,7 +7,7 @@ GDI-DE Architektur der Geodateninfrastruktur Deutschland - Konventionen zu Metad
 
 1. [Einführung](./einfuehrung.md)
 2. [Grundsätzliche Konventionen für alle Metadaten](./grundsatz.md)
-3. [test](./_pages/publications.md)
+3. [test](./tree/master/_pages/publications.md)
 
 ## Hinweise zum Dokument
 
