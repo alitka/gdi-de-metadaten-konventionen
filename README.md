@@ -7,7 +7,7 @@ GDI-DE Architektur der Geodateninfrastruktur Deutschland - Konventionen zu Metad
 
 1. [Einführung](./einfuehrung.md)
 2. [Grundsätzliche Konventionen für alle Metadaten](./grundsatz.md)
-3. [test-respec](.https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/testpage-respec.html)
+3. [test-respec](https://github.com/alitka/gdi-de-metadaten-konventionen/blob/master/_pages/testpage-respec.html)
 
 ## Hinweise zum Dokument
 
