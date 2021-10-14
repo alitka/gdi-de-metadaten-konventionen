@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<csw:Capabilities xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:ows="http://www.opengis.net/ows" xmlns:inspire_ds="http://inspire.ec.europa.eu/schemas/inspire_ds/1.0" xmlns:inspire_com="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0.2" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd http://inspire.ec.europa.eu/schemas/inspire_ds/1.0 http://inspire.ec.europa.eu/schemas/inspire_ds/1.0/inspire_ds.xsd">
+<csw:Capabilities xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:gml="http://www.opengis.net/gml" xmlns:ows="http://www.opengis.net/ows" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:inspire_ds="http://inspire.ec.europa.eu/schemas/inspire_ds/1.0" xmlns:inspire_com="http://inspire.ec.europa.eu/schemas/common/1.0" version="2.0.2" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd http://inspire.ec.europa.eu/schemas/inspire_ds/1.0 http://inspire.ec.europa.eu/schemas/inspire_ds/1.0/inspire_ds.xsd">
   <ows:ServiceIdentification>
-    <ows:Title>INSPIRE-compliant Thüringen Discovery Service (CSW)</ows:Title>
-    <ows:Abstract>Test metadata for INSPIRE-compliant Discovery Service (CSW) within the GeoNetwork proof-of-concept phase for Thüringer Landesamt für Bodenmanagement und Geoinformation.</ows:Abstract>
+    <ows:Title>INSPIRE-konformer Discovery Service (CSW) für das Thüringer Landesamt für Bodenmanagement und Geoinformation</ows:Title>
+    <ows:Abstract>GeoMIS 2.0 - Dies ist der offizielle Catalogue Service Web des Thüringer Landesamt für Bodenmanagement und Geoinformation. Er dient der Bereitstellung von Metadaten über Geoanwendungen, Geodienste und Geodaten der Geodateninfrastruktur des TLBG</ows:Abstract>
     <ows:Keywords>
       <ows:Keyword>inspireidentifiziert</ows:Keyword>
       <ows:Keyword>infoCatalogueService</ows:Keyword>
+      <ows:Keyword>Gewässernetz</ows:Keyword>
       <ows:Keyword>Adressen</ows:Keyword>
       <ows:Keyword>Flurstücke/Grundstücke (Katasterparzellen)</ows:Keyword>
-      <ows:Keyword>Gewässernetz</ows:Keyword>
     </ows:Keywords>
     <ows:ServiceType>CSW</ows:ServiceType>
     <ows:ServiceTypeVersion>2.0.2</ows:ServiceTypeVersion>
@@ -48,8 +48,8 @@
     <ows:Operation name="GetCapabilities">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-test"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-test"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="sections">
@@ -66,8 +66,8 @@
     <ows:Operation name="DescribeRecord">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-test"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-test"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="outputFormat">
@@ -96,16 +96,16 @@
     <ows:Operation name="GetDomain">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-test"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-test"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="GetRecords">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-test"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-test"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="resultType">
@@ -204,8 +204,8 @@
     <ows:Operation name="GetRecordById">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-test"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-test"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter xmlns:gfc="http://www.isotc211.org/2005/gfc" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" name="outputSchema">
@@ -241,16 +241,16 @@
     <ows:Operation name="Transaction">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-publication"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-publication"/>
         </ows:HTTP>
       </ows:DCP>
     </ows:Operation>
     <ows:Operation name="Harvest">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
-          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://62.159.72.87:8080/geonetwork/srv/eng/csw-publication"/>
+          <ows:Get xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-publication"/>
+          <ows:Post xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-publication"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="ResourceType">
@@ -269,79 +269,79 @@
     <ows:Constraint name="PostEncoding">
       <ows:Value>SOAP</ows:Value>
     </ows:Constraint>
-      <inspire_ds:ExtendedCapabilities>
-        <inspire_com:ResourceLocator>
-          <inspire_com:URL>http://62.159.72.87:8080/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetCapabilities</inspire_com:URL>
-          <inspire_com:MediaType>application/xml</inspire_com:MediaType>
-        </inspire_com:ResourceLocator>
-        <inspire_com:ResourceLocator>
-          <inspire_com:URL>http://localhost:8080/geonetwork</inspire_com:URL>
-          <inspire_com:MediaType>text/html</inspire_com:MediaType>
-        </inspire_com:ResourceLocator>
-        <inspire_com:ResourceType>service</inspire_com:ResourceType>
-        <inspire_com:TemporalReference>
-          <inspire_com:DateOfLastRevision>2021-05-21T18:09:00</inspire_com:DateOfLastRevision>
-        </inspire_com:TemporalReference>
-        <inspire_com:Conformity>
-          <inspire_com:Specification xsi:type="inspire_com:citationInspireInteroperabilityRegulation_ger">
-            <inspire_com:Title>VERORDNUNG (EG) Nr. 1089/2010 DER KOMMISSION vom 23. November 2010 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich der Interoperabilität von Geodatensätzen und -diensten</inspire_com:Title>
-            <inspire_com:DateOfPublication>2010-12-08</inspire_com:DateOfPublication>
-            <inspire_com:URI>OJ:L:2010:323:0011:0102:DE:PDF</inspire_com:URI>
-            <inspire_com:ResourceLocator>
-              <inspire_com:URL>http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:323:0011:0102:DE:PDF</inspire_com:URL>
-              <inspire_com:MediaType>application/pdf</inspire_com:MediaType>
-            </inspire_com:ResourceLocator>
-          </inspire_com:Specification>
-          <inspire_com:Degree>conformant</inspire_com:Degree>
-        </inspire_com:Conformity>
-        <inspire_com:MetadataPointOfContact>
-          <inspire_com:OrganisationName>Thüringer Landesamt für Bodenmanagement und Geoinformation</inspire_com:OrganisationName>
-          <inspire_com:EmailAddress>stefanie.hackel@tlbg.thueringen.de</inspire_com:EmailAddress>
-        </inspire_com:MetadataPointOfContact>
-        <inspire_com:MetadataDate>2021-06-29</inspire_com:MetadataDate>
-        <inspire_com:SpatialDataServiceType>discovery</inspire_com:SpatialDataServiceType>
-        <inspire_com:MandatoryKeyword xsi:type="inspire_com:classificationOfSpatialDataService">
-          <inspire_com:KeywordValue>infoCatalogueService</inspire_com:KeywordValue>
-        </inspire_com:MandatoryKeyword>
-        <inspire_com:Keyword xsi:type="inspire_com:inspireTheme_ger">
-          <inspire_com:OriginatingControlledVocabulary>
-            <inspire_com:Title>GEMET - INSPIRE themes</inspire_com:Title>
-            <inspire_com:DateOfPublication>2008-06-01</inspire_com:DateOfPublication>
-          </inspire_com:OriginatingControlledVocabulary>
-          <inspire_com:KeywordValue>Adressen</inspire_com:KeywordValue>
-        </inspire_com:Keyword>
-        <inspire_com:Keyword xsi:type="inspire_com:inspireTheme_ger">
-          <inspire_com:OriginatingControlledVocabulary>
-            <inspire_com:Title>GEMET - INSPIRE themes</inspire_com:Title>
-            <inspire_com:DateOfPublication>2008-06-01</inspire_com:DateOfPublication>
-          </inspire_com:OriginatingControlledVocabulary>
-          <inspire_com:KeywordValue>Flurstücke/Grundstücke (Katasterparzellen)</inspire_com:KeywordValue>
-        </inspire_com:Keyword>
-        <inspire_com:Keyword xsi:type="inspire_com:inspireTheme_ger">
-          <inspire_com:OriginatingControlledVocabulary>
-            <inspire_com:Title>GEMET - INSPIRE themes</inspire_com:Title>
-            <inspire_com:DateOfPublication>2008-06-01</inspire_com:DateOfPublication>
-          </inspire_com:OriginatingControlledVocabulary>
-          <inspire_com:KeywordValue>Gewässernetz</inspire_com:KeywordValue>
-        </inspire_com:Keyword>
-        <inspire_com:SupportedLanguages>
-          <inspire_com:DefaultLanguage>
-            <inspire_com:Language>ger</inspire_com:Language>
-          </inspire_com:DefaultLanguage>
-          <inspire_com:SupportedLanguage>
-            <inspire_com:Language>ger</inspire_com:Language>
-          </inspire_com:SupportedLanguage>
-          <inspire_com:SupportedLanguage>
-            <inspire_com:Language>eng</inspire_com:Language>
-          </inspire_com:SupportedLanguage>
-          <inspire_com:SupportedLanguage>
-            <inspire_com:Language>ger</inspire_com:Language>
-          </inspire_com:SupportedLanguage>
-        </inspire_com:SupportedLanguages>
-        <inspire_com:ResponseLanguage>
+    <ows:ExtendedCapabilities>
+      <inspire_com:ResourceLocator>
+        <inspire_com:URL>https://geomis.geoportal-th.de:/geonetwork/srv/eng/csw-test?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetCapabilities</inspire_com:URL>
+        <inspire_com:MediaType>application/xml</inspire_com:MediaType>
+      </inspire_com:ResourceLocator>
+      <inspire_com:ResourceLocator>
+        <inspire_com:URL>https://geomis.geoportal-th.de:/geonetwork</inspire_com:URL>
+        <inspire_com:MediaType>text/html</inspire_com:MediaType>
+      </inspire_com:ResourceLocator>
+      <inspire_com:ResourceType>service</inspire_com:ResourceType>
+      <inspire_com:TemporalReference>
+        <inspire_com:DateOfLastRevision>2021-05-21T18:09:00</inspire_com:DateOfLastRevision>
+      </inspire_com:TemporalReference>
+      <inspire_com:Conformity>
+        <inspire_com:Specification xsi:type="inspire_com:citationInspireInteroperabilityRegulation_ger">
+          <inspire_com:Title>VERORDNUNG (EG) Nr. 1089/2010 DER KOMMISSION vom 23. November 2010 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich der Interoperabilität von Geodatensätzen und -diensten</inspire_com:Title>
+          <inspire_com:DateOfPublication>2010-12-08</inspire_com:DateOfPublication>
+          <inspire_com:URI>OJ:L:2010:323:0011:0102:DE:PDF</inspire_com:URI>
+          <inspire_com:ResourceLocator>
+            <inspire_com:URL>http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:323:0011:0102:DE:PDF</inspire_com:URL>
+            <inspire_com:MediaType>application/pdf</inspire_com:MediaType>
+          </inspire_com:ResourceLocator>
+        </inspire_com:Specification>
+        <inspire_com:Degree>conformant</inspire_com:Degree>
+      </inspire_com:Conformity>
+      <inspire_com:MetadataPointOfContact>
+        <inspire_com:OrganisationName>Thüringer Landesamt für Bodenmanagement und Geoinformation</inspire_com:OrganisationName>
+        <inspire_com:EmailAddress>stefanie.hackel@tlbg.thueringen.de</inspire_com:EmailAddress>
+      </inspire_com:MetadataPointOfContact>
+      <inspire_com:MetadataDate>2021-10-05</inspire_com:MetadataDate>
+      <inspire_com:SpatialDataServiceType>discovery</inspire_com:SpatialDataServiceType>
+      <inspire_com:MandatoryKeyword xsi:type="inspire_com:classificationOfSpatialDataService">
+        <inspire_com:KeywordValue>infoCatalogueService</inspire_com:KeywordValue>
+      </inspire_com:MandatoryKeyword>
+      <inspire_com:Keyword xsi:type="inspire_com:inspireTheme_ger">
+        <inspire_com:OriginatingControlledVocabulary>
+          <inspire_com:Title>GEMET - INSPIRE themes</inspire_com:Title>
+          <inspire_com:DateOfPublication>2008-06-01</inspire_com:DateOfPublication>
+        </inspire_com:OriginatingControlledVocabulary>
+        <inspire_com:KeywordValue>Gewässernetz</inspire_com:KeywordValue>
+      </inspire_com:Keyword>
+      <inspire_com:Keyword xsi:type="inspire_com:inspireTheme_ger">
+        <inspire_com:OriginatingControlledVocabulary>
+          <inspire_com:Title>GEMET - INSPIRE themes</inspire_com:Title>
+          <inspire_com:DateOfPublication>2008-06-01</inspire_com:DateOfPublication>
+        </inspire_com:OriginatingControlledVocabulary>
+        <inspire_com:KeywordValue>Adressen</inspire_com:KeywordValue>
+      </inspire_com:Keyword>
+      <inspire_com:Keyword xsi:type="inspire_com:inspireTheme_ger">
+        <inspire_com:OriginatingControlledVocabulary>
+          <inspire_com:Title>GEMET - INSPIRE themes</inspire_com:Title>
+          <inspire_com:DateOfPublication>2008-06-01</inspire_com:DateOfPublication>
+        </inspire_com:OriginatingControlledVocabulary>
+        <inspire_com:KeywordValue>Flurstücke/Grundstücke (Katasterparzellen)</inspire_com:KeywordValue>
+      </inspire_com:Keyword>
+      <inspire_com:SupportedLanguages>
+        <inspire_com:DefaultLanguage>
+          <inspire_com:Language>ger</inspire_com:Language>
+        </inspire_com:DefaultLanguage>
+        <inspire_com:SupportedLanguage>
+          <inspire_com:Language>ger</inspire_com:Language>
+        </inspire_com:SupportedLanguage>
+        <inspire_com:SupportedLanguage>
           <inspire_com:Language>eng</inspire_com:Language>
-        </inspire_com:ResponseLanguage>
-      </inspire_ds:ExtendedCapabilities>
+        </inspire_com:SupportedLanguage>
+        <inspire_com:SupportedLanguage>
+          <inspire_com:Language>ger</inspire_com:Language>
+        </inspire_com:SupportedLanguage>
+      </inspire_com:SupportedLanguages>
+      <inspire_com:ResponseLanguage>
+        <inspire_com:Language>ger</inspire_com:Language>
+      </inspire_com:ResponseLanguage>
+    </ows:ExtendedCapabilities>
   </ows:OperationsMetadata>
   <ogc:Filter_Capabilities>
     <ogc:Spatial_Capabilities>
